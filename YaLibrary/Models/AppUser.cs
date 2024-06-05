@@ -16,7 +16,6 @@ namespace YaLibrary.Models
             Lastname = _lastName;
             Email = email;
             UserName = email;
-            EmailConfirmed = true;
         }
     }
 }
