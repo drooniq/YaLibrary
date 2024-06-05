@@ -7,6 +7,7 @@ namespace YaLibrary.Data
     public class YaLibraryContext : IdentityDbContext<AppUser>
     {
         public DbSet<Book> Books { get; set; } = default!;
+        public DbSet<UserBook> UserBooks { get; set; } = default!;
 
         public YaLibraryContext (DbContextOptions<YaLibraryContext> options)
             : base(options)
